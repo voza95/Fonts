@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alignMentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:visibility="gone"
+    android:weightSum="4">
+
+    <ImageView
+        android:id="@+id/alignLeft"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:padding="@dimen/_6sdp"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/alignCenter"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="@dimen/_6sdp"
+        android:scaleType="fitCenter"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/alignRight"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="@dimen/_6sdp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/boldText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="@dimen/_6sdp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_bold"
+        android:singleLine="true" />
+</LinearLayout>

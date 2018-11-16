@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D32F2F</color>
+    <color name="colorPrimaryDark">#C62828</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bgBottomNavigation">#fe485a</color>
+    <color name="title_color">#5a5a5b</color>
+    <color name="gray_color">#e3e4f2</color>
+    <color name="color_white">#ffffff</color>
+    <color name="qoute_bg1">#ffc36a</color>
+    <color name="qoute_bg2">#ff6d95</color>
+    <color name="qoute_bg3">#ab7eff</color>
+</resources>

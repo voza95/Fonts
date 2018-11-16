@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/lib/my_package_name"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomsheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/squreLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/liner_edt_assetsContainer"
+            android:layout_centerInParent="true"
+            android:elevation="@dimen/_2sdp">
+
+            <com.xiaopo.flying.sticker.StickerView
+                android:id="@+id/msticker_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:elevation="@dimen/_1sdp"
+                app:showBorder="true"
+                app:showIcons="true" />
+
+            <ImageView
+                android:id="@+id/bg_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_96"
+                android:contentDescription="TODO"
+                android:scaleType="centerCrop" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:elevation="@dimen/_1sdp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_edt_assetsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_above="@+id/edt_frameContainer"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btn_template"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/template_drawable"
+                android:padding="@dimen/_3sdp"
+                android:singleLine="true"
+                android:text="@string/templateText"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_11ssp" />
+
+
+            <Button
+                android:id="@+id/btn_gallary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/gallery_drawable"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/gallaryText"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_11ssp" />
+
+
+            <Button
+                android:id="@+id/btn_images"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/sticker_drawable"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/sticker_Text"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_11ssp" />
+
+            <Button
+                android:id="@+id/btn_quote"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/quote_drawable"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/quote_text"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_11ssp" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/edt_frameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_above="@+id/bottem_edt_optionBar">
+
+            <include layout="@layout/recycler_view_layout" />
+
+            <include layout="@layout/view_text_alignment" />
+
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="7"
+                android:maxHeight="@dimen/_6sdp"
+                android:minHeight="@dimen/_6sdp"
+                android:progress="2"
+                android:progressDrawable="@drawable/custom_progress_drawable"
+                android:thumb="@drawable/seek_bar_thumb"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <it.sephiroth.android.library.bottomnavigation.BottomNavigation
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/savebtn_Container"
+            android:padding="0dp"
+            android:id="@+id/bottem_edt_optionBar"
+            app:bbn_scrollEnabled="true"
+            app:layout_behavior="@string/bbn_phone_view_behavior"
+            app:bbn_badgeProvider="@string/bbn_badgeProvider"
+            app1:bbn_entries="@menu/bottembar_editing_item"></it.sephiroth.android.library.bottomnavigation.BottomNavigation>
+        <LinearLayout
+            android:id="@+id/savebtn_Container"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:background="@color/colorPrimaryDark"
+                android:padding="@dimen/_2sdp"
+                android:text="@string/save_Text"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp" />
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/_2sdp"
+                android:text="@string/share_Text"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>
+<!--<it.sephiroth.android.library.bottomnavigation.BottomNavigation
+            android:id="@+id/bottem_edt_optionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/savebtn_Container"
+            android:padding="0dp"
+            app:bbn_badgeProvider="@string/bbn_badgeProvider"
+            app:bbn_entries="@menu/bottembar_editing_item"
+            app:bbn_scrollEnabled="true"
+            app:layout_behavior="@string/bbn_phone_view_behavior" />
+-->

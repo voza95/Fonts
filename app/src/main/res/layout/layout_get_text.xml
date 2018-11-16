@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <EditText
+        android:id="@+id/EdtgetText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:hint="Enter text here..."
+        android:singleLine="false"
+        android:textColor="#000"
+        android:gravity="start"
+        android:textSize="@dimen/_18ssp" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:text="Done" />
+</LinearLayout>

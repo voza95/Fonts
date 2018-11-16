@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:bbn_itemColorInactive="#cacaca">
+    <item
+        android:id="@+id/bbn_selectImage"
+        android:color="#191919"
+        android:icon="@drawable/image_icon"
+        android:title="Images" />
+    <item
+        android:id="@+id/bbn_fontSize"
+        android:color="#191919"
+        android:icon="@drawable/textsize_icon"
+
+        android:title="Text Size" />
+    <item
+        android:id="@+id/bbn_alignmet"
+        android:color="#191919"
+        android:icon="@drawable/textalignment_icon"
+        android:title="Alignment" />
+    <item
+        android:id="@+id/bbn_textcolor"
+        android:color="#191919"
+        android:icon="@drawable/textcolor_icon"
+        android:title="Text Color" />
+
+    <item
+        android:id="@+id/bbn_font"
+        android:color="#191919"
+        android:icon="@drawable/font"
+        android:title="Font" />
+</menu>

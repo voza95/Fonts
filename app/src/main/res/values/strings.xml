@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FontsAndGradient2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_quotes_edit">QuotesEditActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="templateText">Templets</string>
+    <string name="gallaryText">Gallery</string>
+    <string name="sticker_Text">Stickers</string>
+    <string name="save_Text">Save</string>
+    <string name="share_Text">Share</string>
+    <string name="frame_Text">Frames</string>
+    <string name="quote_text">Quote</string>
+    <string name="title_activity_second_activiy">Interstitial</string>
+    <string name="msg_welcome">Welcome to Admob. Click on the below button to launch the Interstitial ad.</string>
+    <string name="btn_fullscreen_ad">Show Interstitial Ad</string>
+    <string name="btn_rewarded_video">Show Rewarded Video Ad</string>
+
+</resources>
